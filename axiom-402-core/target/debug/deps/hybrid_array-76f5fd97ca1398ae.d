@@ -1,0 +1,11 @@
+/home/skware/metta/axiom-402/axiom-402-core/target/debug/deps/hybrid_array-76f5fd97ca1398ae.d: /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/lib.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/sizes.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/flatten.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/from_fn.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/iter.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/traits.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/../README.md
+
+/home/skware/metta/axiom-402/axiom-402-core/target/debug/deps/libhybrid_array-76f5fd97ca1398ae.rmeta: /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/lib.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/sizes.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/flatten.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/from_fn.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/iter.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/traits.rs /home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/../README.md
+
+/home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/lib.rs:
+/home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/sizes.rs:
+/home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/flatten.rs:
+/home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/from_fn.rs:
+/home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/iter.rs:
+/home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/traits.rs:
+/home/skware/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/../README.md:

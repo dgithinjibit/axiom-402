@@ -1,0 +1,36 @@
+[package]
+name        = "cli"
+description = "Developer CLI for axiom-402 — derive proofs and anchor them on NEAR"
+version.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+license.workspace      = true
+repository.workspace   = true
+
+[[bin]]
+name = "axiom"
+path = "src/main.rs"
+
+[dependencies]
+# Internal crates
+reasoning-engine = { workspace = true }
+near-settlement   = { workspace = true }
+
+# CLI argument parsing
+clap = { workspace = true }
+
+# Async runtime
+tokio = { workspace = true }
+
+# Error handling
+anyhow = { workspace = true }
+
+# Logging / tracing
+tracing            = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+# Serialisation (pretty-print output)
+serde_json = { workspace = true }
+
+# Config / env
+dotenvy = { workspace = true }

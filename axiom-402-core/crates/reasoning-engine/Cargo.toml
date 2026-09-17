@@ -1,0 +1,35 @@
+[package]
+name        = "reasoning-engine"
+description = "MeTTa policy loading and proof-tree derivation for axiom-402"
+version.workspace     = true
+edition.workspace     = true
+rust-version.workspace = true
+license.workspace     = true
+repository.workspace  = true
+
+[dependencies]
+# MeTTa / Hyperon — git dep, pkg_mgmt feature only (no das/bus)
+hyperon = { workspace = true }
+
+# Serialisation of proof trees
+serde      = { workspace = true }
+serde_json = { workspace = true }
+
+# SHA-256 hashing of serialised proof
+sha2 = { workspace = true }
+hex  = { workspace = true }
+
+# Structured error types — every public fn returns Result<T, EngineError>
+thiserror = { workspace = true }
+
+# Logging
+tracing = { workspace = true }
+
+[dev-dependencies]
+# Snapshot / integration tests
+anyhow    = { workspace = true }
+tokio     = { workspace = true }
+
+[lib]
+name = "reasoning_engine"
+path = "src/lib.rs"

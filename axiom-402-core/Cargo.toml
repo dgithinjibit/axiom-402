@@ -1,0 +1,75 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/reasoning-engine",
+    "crates/near-settlement",
+    "crates/cli",
+    "contracts/attestation",
+]
+
+# ── Shared workspace-level metadata ──────────────────────────────────────────
+[workspace.package]
+version      = "0.1.0"
+edition      = "2024"
+rust-version = "1.93"
+authors      = ["axiom-402 contributors"]
+license      = "MIT OR Apache-2.0"
+repository   = "https://github.com/your-org/axiom-402"
+
+# ── Shared dependency versions (pin everything) ──────────────────────────────
+[workspace.dependencies]
+# Internal crates
+reasoning-engine = { path = "crates/reasoning-engine" }
+near-settlement   = { path = "crates/near-settlement"  }
+
+# MeTTa / Hyperon (not on crates.io — must use git)
+hyperon = { git = "https://github.com/trueagi-io/hyperon-experimental.git", tag = "v0.2.10", default-features = false, features = ["pkg_mgmt"] }
+
+# NEAR smart-contract SDK
+near-sdk = { version = "5.29.0", default-features = false }
+
+# Async runtime
+tokio = { version = "1.44", features = ["full"] }
+
+# HTTP client
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+
+# Serialisation
+serde      = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0" }
+
+# Hashing
+sha2 = { version = "0.10" }
+hex  = { version = "0.4" }
+
+# Error handling
+thiserror = { version = "2.0" }
+anyhow    = { version = "1.0" }
+
+# Logging / tracing
+tracing            = { version = "0.1" }
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+# CLI
+clap = { version = "4.5", features = ["derive", "env"] }
+
+# Config
+config  = { version = "0.14" }
+dotenvy = { version = "0.15" }
+
+# ── Release profile: strip symbols for smaller WASM ──────────────────────────
+[profile.release]
+opt-level = "z"
+lto       = true
+codegen-units = 1
+panic     = "abort"
+strip     = "symbols"
+
+# ── Contract-specific profile (referenced in contracts/attestation/Cargo.toml)
+[profile.contract]
+inherits      = "release"
+opt-level     = "z"
+lto           = true
+codegen-units = 1
+panic         = "abort"
+overflow-checks = true

@@ -1,0 +1,28 @@
+[package]
+name        = "attestation"
+description = "NEAR smart contract — anchors and verifies axiom-402 proof hashes on-chain"
+version.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+license.workspace      = true
+repository.workspace   = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+path       = "src/lib.rs"
+
+[dependencies]
+near-sdk = { workspace = true, features = ["wee_alloc"] }
+
+# Serialisation — borsh is handled by near-sdk, serde for JSON views.
+serde      = { workspace = true }
+serde_json = { workspace = true }
+
+[profile.contract]
+inherits        = "release"
+opt-level       = "z"
+lto             = true
+codegen-units   = 1
+panic           = "abort"
+overflow-checks = true
+strip           = "symbols"

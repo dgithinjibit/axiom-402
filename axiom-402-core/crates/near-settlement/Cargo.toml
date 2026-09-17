@@ -1,0 +1,40 @@
+[package]
+name        = "near-settlement"
+description = "NEAR Protocol client — signs and submits proof-anchoring transactions for axiom-402"
+version.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+license.workspace      = true
+repository.workspace   = true
+
+[dependencies]
+# Internal
+reasoning-engine = { workspace = true }
+
+# Async runtime
+tokio = { workspace = true }
+
+# HTTP — talking to NEAR RPC
+reqwest = { workspace = true }
+
+# Serialisation
+serde      = { workspace = true }
+serde_json = { workspace = true }
+
+# Error handling
+thiserror = { workspace = true }
+anyhow    = { workspace = true }
+
+# Logging
+tracing = { workspace = true }
+
+# Config / env
+config  = { workspace = true }
+dotenvy = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true }
+
+[lib]
+name = "near_settlement"
+path = "src/lib.rs"
