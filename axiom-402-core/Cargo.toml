@@ -14,7 +14,7 @@ edition      = "2024"
 rust-version = "1.93"
 authors      = ["axiom-402 contributors"]
 license      = "MIT OR Apache-2.0"
-repository   = "https://github.com/your-org/axiom-402"
+repository   = "https://github.com/dgithinjibit/axiom-402"
 
 # ── Shared dependency versions (pin everything) ──────────────────────────────
 [workspace.dependencies]

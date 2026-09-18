@@ -125,7 +125,7 @@ axiom-402/
 ### 1 — Clone
 
 ```bash
-git clone https://github.com/your-org/axiom-402.git
+git clone https://github.com/dgithinjibit/axiom-402.git
 cd axiom-402
 ```
 
@@ -211,8 +211,8 @@ Add the crates to your agent's `Cargo.toml`:
 
 ```toml
 [dependencies]
-reasoning-engine = { git = "https://github.com/your-org/axiom-402", package = "reasoning-engine" }
-near-settlement   = { git = "https://github.com/your-org/axiom-402", package = "near-settlement"  }
+reasoning-engine = { git = "https://github.com/dgithinjibit/axiom-402", package = "reasoning-engine" }
+near-settlement   = { git = "https://github.com/dgithinjibit/axiom-402", package = "near-settlement"  }
 ```
 
 Then in your agent code:
