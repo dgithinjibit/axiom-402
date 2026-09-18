@@ -1,0 +1,15 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Rust toolchain pin for axiom-402-core
+#
+# Pins the exact Rust version so every contributor and CI job builds against
+# the same compiler.  Update `channel` when bumping the workspace MSRV.
+#
+# near-sdk 5.29.0 requires rust-version = "1.93".
+# We add the wasm32 target needed to compile the NEAR contract.
+# ─────────────────────────────────────────────────────────────────────────────
+[toolchain]
+channel    = "1.93"
+components = ["rustfmt", "clippy"]
+targets    = [
+  "wasm32-unknown-unknown",   # NEAR contract compilation target
+]
